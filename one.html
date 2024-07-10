@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:2px solid green;
+        }
+        .key{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    <div class="box">
+    <h1>HELLO EVERYONE WELCOME TO JQUERY</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae cum nobis ducimus praesentium explicabo dolorum! Ducimus praesentium, ex dolorem asperiores vel exercitationem deserunt aspernatur voluptas maiores est tempore ipsa?
+    Blanditiis quae assumenda libero, quos maxime temporibus nemo asperiores veritatis officia odit qui repellat excepturi magnam fugit, vel nostrum officiis eveniet quia. Alias doloribus quis quibusdam eligendi eius esse facilis.
+    Labore nulla blanditiis illum quibusdam quidem. A nulla consequuntur incidunt molestiae recusandae, distinctio in esse natus voluptatum sunt magnam voluptas enim odit accusantium ratione possimus at. Non ullam consequatur dolorem.
+    Pariatur quos error tempora qui nulla omnis consequatur nisi aliquam doloremque, ullam enim, possimus deleniti debitis architecto obcaecati magni veritatis blanditiis accusamus nemo. In quas fugiat, autem molestias dolor quibusdam.
+    Ipsam soluta in placeat sequi exercitationem illo ad sint corporis labore rem deserunt facere libero ab aut laboriosam explicabo officia accusantium, corrupti iste natus fuga tempore fugit. Commodi, accusantium voluptates.
+    Ab velit exercitationem asperiores quod, provident in explicabo quo impedit adipisci nihil minus libero sequi culpa id voluptatem veniam voluptatibus modi quae? Laborum distinctio magni voluptates consequatur eum dolorum natus.
+    Est exercitationem expedita sequi nam adipisci. Dicta at molestias eum exercitationem dolor? Beatae exercitationem id ipsum eveniet corrupti tempore nam magni fugiat, laboriosam atque, minima quo modi magnam? Provident, sint.
+    Omnis, quia incidunt nostrum sequi delectus unde hic ab ducimus? Fuga, sapiente provident! Iste officiis ea molestias aspernatur unde odio explicabo esse recusandae maiores similique ducimus, totam nam tempore voluptas.
+    Adipisci aliquid repellat quam velit ipsa, in distinctio rem soluta commodi quos dolorem accusamus saepe dicta asperiores tempore quaerat culpa rerum harum. Placeat cupiditate rem accusamus molestias. Porro, sint qui?
+    Rem atque ab minus sint facilis deserunt quasi expedita, adipisci ullam tempora dolor enim aspernatur possimus. Rem nemo odit animi, facere iure reprehenderit recusandae debitis ullam earum rerum veniam cupiditate.</p>
+</div>
+<div class="f"><br>
+    <form id="sa">
+<label>FIRST NAME:</label>
+<input type="text"id="fname"><br><br>
+<label>LAST NAME:</label>
+<input type="text"id="lname"><br><br>
+<label>ENTER YOUR STATE</label>
+<select id="s">
+    <option>AP</option>
+    <option>ts</option>
+    <option>TN</option>
+    <option>MP</option>
+</select>
+<input type="submit"id="submit">
+</form>
+</div>
+   <script>
+    $(document).ready(function(){
+        $(".box").click(function(){
+        $(".box").css("background-color","yellow");
+    
+        });
+        $(".box").dblclick(function(){
+        $(".box").css("background-color","orange");
+    
+        });
+        $(".box").contextmenu(function(){
+        $(".box").css("background-color","pink");
+    
+        });
+        $(".box").mouseenter(function(){
+        $(".box").css("background-color","purple");
+    
+        });
+        $(".box").mouseleave(function(){
+        $(".box").css("background-color","lime");
+    
+        });
+        $(".box").click(function(){
+        $(".box").css("background-color","yellow");
+    
+        });
+  
+        $("body").keypress(function(){
+        $("body").css("background-color","lime");
+    
+        });
+        $("body").keyup(function(){
+        $("body").css("background-color","blue")
+        });
+        $("#lname,#fname").focus(function(){
+         $(this).css("background-color","pink")
+        });
+        $("#lname,#fname").blur(function(){
+         $(this).css("background-color","")
+        });
+        $("#s").change(function(){
+         $(this).css("background-color","violet")
+        });
+        $("#sa").submit(function(){
+         alert("your form is submitted successfully");
+        });
+    });
+   </script> 
+</body>
+</html>
