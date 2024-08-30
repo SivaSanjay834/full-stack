@@ -1,0 +1,172 @@
+.about-title h1{
+    text-decoration: underline;
+   color: rgb(19, 238, 176);
+    
+}
+.certify{
+    color: #d3e109;
+}
+.skills{
+    color:rgb(25, 241, 176)
+}
+.about-left img{
+border-radius: 10px;
+margin-top: 120px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    margin:80px 170px;
+}
+.about-sections{
+    display:flex;
+    gap:80px;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+}
+.about-para{
+    display:flex;
+    
+    flex-direction: column;
+    gap:20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.about-skills{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.about-skill{
+    display:flex;
+    gap:50px;
+    align-items: center;
+    transition: 0.3s;
+}
+.about-skill p{
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.about-skill hr{
+    outline:none;
+    border:none;
+    width:50%;
+    height:6px;
+    border-radius: 50px;
+    background:linear-gradient(267deg,#da25b3 ,#2d8928);
+}
+.about-achievements{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.about-achievement{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    transition: 0.5s;
+    flex-wrap:wrap;
+}
+.about-achievement h1{
+    font-size: 60px;
+    font-weight: 700;
+    background:  linear-gradient(270deg, #eb0863 10%, #08a39e 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-achievement p{
+    font-size: 22px;
+    font-weight: 700;
+}
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.about-achievement:hover{
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+.about-internships{
+    flex-direction: row;
+    margin-top: -80px;
+}
+.intern{
+    color:#22c925;
+}
+.about-internship{
+    margin-top: 30px;
+    background:linear-gradient(267deg,#da7c25 ,#B923E1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media(max-width:768px){
+    .about{
+        gap:80px;
+        margin:50px 70px;
+        align-items: start;
+    }
+    .about-title h1{
+        padding:0px;
+        width:80%;
+        font-size: 40px;
+        margin-left:50px ;
+
+
+    }
+ .about-sections{
+    flex-direction: column ;
+ }
+ .about-left img{
+    margin-left: 50px;
+    margin-top: 0;
+ }
+ .about-para{
+    margin-top: -40px;
+    font-size: 28px;
+    line-height: 1.5;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    width:130%;
+    
+ }
+ .about-skill{
+    gap:15px;
+    align-items: center;
+ }
+ .about-skill p{
+    font-size: 20px;
+ }
+ .about-skill hr{
+    height:6px;
+ }
+ .about-achievements{
+    flex-direction: column;
+    gap:20px;
+ }
+ .about-achievement{
+    gap:20px;
+ }
+ .about-achievement h1{
+    font-size: 34px;
+    font-weight: 700;
+ }
+ .about-achievement p{
+    font-size: 16px;
+    align-items: center;
+ }
+ .about-left img{
+    border-radius: 16px;
+ }
+
+}
